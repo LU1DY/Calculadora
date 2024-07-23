@@ -1,5 +1,3 @@
-// 1. arrumar o layout para calculo de bhaskara
-
 const clear = document.querySelector(".clear");
 const valueText = document.querySelector(".value");
 const equal = document.querySelector(".equal");
