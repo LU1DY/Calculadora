@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <form class="calculator" name="calc">
+        <textarea name="txt" class="value" rows="3"></textarea>
+        <div class="bottons">
+          <span class="raiz">√</span>
+          <span class="parenteseEsq">(</span>
+          <span class="parenteseDir">)</span>
+          <span class="del"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path
+                d="M360-200q-20 0-37.5-9T294-234L120-480l174-246q11-16 28.5-25t37.5-9h400q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H360Zm400-80v-400 400Zm-400 0h400v-400H360L218-480l142 200Zm96-40 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Z"
+              />
+            </svg>
+          </span>
+          <span class="clear">c</span>
+          <span class="fatorial">x!</span>
+          <span class="num">7</span>
+          <span class="num">8</span>
+          <span class="num">9</span>
+          <span class="op">/</span>
+          <span class="potenciacao">x¹</span>
+          <span class="num">4</span>
+          <span class="num">5</span>
+          <span class="num">6</span>
+          <span class="op">*</span>
+          <span class="pi">π</span>
+          <span class="num">1</span>
+          <span class="num">2</span>
+          <span class="num">3</span>
+          <span class="sub">-</span>
+          <span class="percent">%</span>
+          <span class="num">0</span>
+          <span class="point">.</span>
+          <span class="equal">=</span>
+          <span class="sum">+</span>
+        </div>
+      </form>
+    </div>
+    <div class="containerBhaskara">
+      <h2>Bhaskara</h2>
+      <textarea
+        name=""
+        class="value"
+        rows="3"
+        id="a"
+        placeholder="Valor A: 1x²"
+      ></textarea>
+      <textarea
+        name=""
+        class="value"
+        rows="3"
+        id="b"
+        placeholder="Valor B: 1x"
+      ></textarea>
+      <textarea
+        name=""
+        class="value"
+        rows="3"
+        id="c"
+        placeholder="Valor C: 1"
+      ></textarea>
+      <button id="resultBhaskara">Calcular</button>
+      <button id="cleanBhaskara">Limpar</button>
+      <div class="result">
+        <p id="delta">
+          <span id="deltaValue"></span>
+        </p>
+        <p id="x1"><span id="x1Value"></span></p>
+        <p id="x2"><span id="x2Value"></span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+  </body>
+</html>
