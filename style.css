@@ -14,6 +14,13 @@ body {
   background: #091921;
   column-gap: 3rem;
 }
+
+@media (max-width: 1000px) {
+  body {
+    justify-content: space-evenly !important;
+  }
+}
+
 body::before {
   content: "";
   position: absolute;
